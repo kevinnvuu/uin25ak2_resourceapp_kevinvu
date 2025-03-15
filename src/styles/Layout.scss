@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+// Variabler for farger og font
+$white: #fff;
+$lightblue: #58699D;
+$lightgrey: #E1E5EE;
+$darkblue: #2A324B;
+$font: 'Montserrat', sans-serif;
+$maxsize: 1200px;
+
+// Globale stiler
+body {
+  background-color: $lightgrey;
+  margin: 0;
+  color: $darkblue;
+  font-family: $font;
+}
+
+h2 {
+    text-transform: capitalize; /* Gjør første bokstav i hvert ord stor */
+}
+
+// Styling for navigasjonsmeny
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 115px;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+
+    li {
+      a {
+        color: $white;
+        background-color: $darkblue;
+        display: inline-block;
+        padding: 1.2rem 4.1rem;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+
+        // Aktiv lenke
+        &.active {
+          background-color: $white;
+          color: $darkblue;
+        }
+
+        // Hover-effekt 
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+
+// Styling for container som holder innholdet
+#container {
+    background-color: $white; 
+    max-width: 1065px;
+    margin: auto;
+    min-height: 330px;
+    margin-top: -16px;
+    padding: 38px;
+  
+    // Når en lenke er aktiv, endre bakgrunnsfargen på containeren
+    .layout nav ul li a.active + & {
+      background-color: $lightgrey; 
+    }
+  }
