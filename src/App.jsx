@@ -6,7 +6,7 @@ import PageTitle from "./components/PageTitle"; // Importer PageTitle-komponente
 function App() {
   return (
     <Layout>
-      <PageTitle title="Ressursarkiv" /> {/* Tittel for appen */}
+      <PageTitle title="Ressursarkiv" /> {/* Tittel */}
       <Routes>
         {/* Definerer ruter for hver kategori */}
         <Route path="/html" element={<Resources category="html" />} />

@@ -7,7 +7,7 @@ function Nav() {
       {/* HTML-lenke */}
       <li>
         <NavLink
-          to="/html" // Destinasjonen for lenken (navigerer til /html)
+          to="/html" // Navigerer til /html
           className={({ isActive }) => (isActive ? "active" : "")} // Legg til "active"-klassen hvis lenken er aktiv
         >
           HTML
@@ -57,4 +57,4 @@ function Nav() {
   );
 }
 
-export default Nav; // Eksporter Nav-komponenten slik at den kan brukes andre steder
+export default Nav; 

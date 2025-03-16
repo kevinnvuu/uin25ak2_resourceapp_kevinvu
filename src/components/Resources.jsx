@@ -10,7 +10,7 @@ function Resources({ category }) {
   // Logg kategorien til konsollen for feilsøking
   console.log(category);
 
-  // Tilpasser spesfikt  tittelen for "headless-cms" til "sanity and headless CMS"
+  // Tilpasser spesifikt tittelen for "headless-cms" til "sanity and headless CMS"
   const categoryTitle = category === "headless-cms" ? "sanity and headless CMS" : category;
 
   return (
